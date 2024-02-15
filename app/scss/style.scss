@@ -1,0 +1,17 @@
+@import 'config/fonts';
+@import 'config/reset';
+@import 'config/vars';
+@import 'config/global';
+@import 'config/libs';
+
+@import 'components/header';
+@import 'components/footer';
+
+// @import 'pages/index/top-slider';
+
+@import 'layout/media-1400px';
+@import 'layout/media-1200px';
+@import 'layout/media-992px';
+@import 'layout/media-768px';
+@import 'layout/media-576px';
+@import 'layout/media-440px';
