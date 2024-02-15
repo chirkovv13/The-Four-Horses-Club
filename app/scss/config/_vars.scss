@@ -1,12 +1,66 @@
-$accent: #fe3e57;
-$default: #8d8d8d;
-$title: #29282d;
+$accent: #F54932;
+$title: #313131;
+$default: #1F1F1F;
+$bg: #ffffff;
+$bg-light: #E9DED4;
 $white: #ffffff;
-$bg: #f6f6f6;
+$btn-deafult: #1F1F1F;
+$btn-lightest: transparent;
+$btn-hover: #FBCE51;
+$btn-disabled: #D6D6D6;
+$optional: #3057A2;
+$text: #6F6F6F;
+$text-light: #7A7672;
+$text-lighten: #838383;
+$text-lightest: #D0D0D0;
 
-// %quicksand-400 {
-//   font-family: 'Quicksand-Regular', sans-serif;
-//   font-weight: 400;
-// }
+%btn {
+  display: inline-block;
+  max-width: 542px;
+  width: 100%;
+  height: 72px;
+  padding: 15px;
+  @extend %GolosText-500;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid $default;
+  border-radius: 50%;
+  color: $white;
+  background-color: $default;
+  overflow: hidden;
+}
 
-%btn {}
+%GolosText-400 {
+  font-family: 'GolosText-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%GolosText-500 {
+  font-family: 'GolosText-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%GolosText-600 {
+  font-family: 'GolosText-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%GolosText-700 {
+  font-family: 'GolosText-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%Merriweather-400 {
+  font-family: 'Merriweather-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%Merriweather-700 {
+  font-family: 'Merriweather-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%Montserrat-500 {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+}
