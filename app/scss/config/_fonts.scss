@@ -1,11 +1,83 @@
-// @font-face {
-//   font-family: 'Quicksand-Regular';
-//   font-weight: 400;
-//   font-style: normal;
-//   src: local('Quicksand-Regular'),
-//        url('./fonts/Quicksand-Regular.woff2') format('woff2'),
-//        url('./fonts/Quicksand-Regular.woff') format('woff'),
-//        url('./fonts/Quicksand-Regular.ttf') format('ttf'),
-//        url('./fonts/Quicksand-Regular.eot') format('eot');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'GolosText-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('GolosText-Regular'),
+    url('./fonts/GolosText-Regular.woff2') format('woff2'),
+    url('./fonts/GolosText-Regular.woff') format('woff'),
+    url('./fonts/GolosText-Regular.ttf') format('ttf'),
+    url('./fonts/GolosText-Regular.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GolosText-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('GolosText-Medium'),
+    url('./fonts/GolosText-Medium.woff2') format('woff2'),
+    url('./fonts/GolosText-Medium.woff') format('woff'),
+    url('./fonts/GolosText-Medium.ttf') format('ttf'),
+    url('./fonts/GolosText-Medium.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GolosText-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('GolosText-SemiBold'),
+    url('./fonts/GolosText-SemiBold.woff2') format('woff2'),
+    url('./fonts/GolosText-SemiBold.woff') format('woff'),
+    url('./fonts/GolosText-SemiBold.ttf') format('ttf'),
+    url('./fonts/GolosText-SemiBold.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GolosText-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('GolosText-Bold'),
+    url('./fonts/GolosText-Bold.woff2') format('woff2'),
+    url('./fonts/GolosText-Bold.woff') format('woff'),
+    url('./fonts/GolosText-Bold.ttf') format('ttf'),
+    url('./fonts/GolosText-Bold.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Merriweather-Regular'),
+    url('./fonts/Merriweather-Regular.woff2') format('woff2'),
+    url('./fonts/Merriweather-Regular.woff') format('woff'),
+    url('./fonts/Merriweather-Regular.ttf') format('ttf'),
+    url('./fonts/Merriweather-Regular.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Merriweather-Bold'),
+    url('./fonts/Merriweather-Bold.woff2') format('woff2'),
+    url('./fonts/Merriweather-Bold.woff') format('woff'),
+    url('./fonts/Merriweather-Bold.ttf') format('ttf'),
+    url('./fonts/Merriweather-Bold.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Montserrat-Medium'),
+    url('./fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('./fonts/Montserrat-Medium.woff') format('woff'),
+    url('./fonts/Montserrat-Medium.ttf') format('ttf'),
+    url('./fonts/Montserrat-Medium.eot') format('eot');
+  font-display: swap;
+}
