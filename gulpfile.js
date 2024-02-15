@@ -277,5 +277,5 @@ exports.cleanDist   = cleanDist;
 exports.cleanWebp   = cleanWebp;
 exports.buildDist   = buildDist;
 
-exports.build       = series(cleanDist, cleanHtml, html, cleanWebp, imagesApp, buildDist, imagesDist);
+exports.build       = series(cleanDist, cleanHtml, font, html, cleanWebp, imagesApp, buildDist, imagesDist);
 exports.default     = series(html, styles, font, imagesApp, svgSprite, parallel(scripts, server, watching));
