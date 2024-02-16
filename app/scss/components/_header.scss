@@ -1,8 +1,11 @@
 .header {
-  min-height: 700px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
+  &__wrapper {
+    min-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   &__logo {
     padding-top: 26px;
@@ -67,5 +70,9 @@
   &__btn-light:hover {
     color: $white;
     background-color: $btn-default;
+  }
+
+  &__runnung-line {
+    overflow: hidden;
   }
 }
