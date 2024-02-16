@@ -1,5 +1,5 @@
 .info {
-  padding: 80px 0 200px;
+  padding: 80px 0 203px;
 
   &__top {
     display: flex;
@@ -76,8 +76,6 @@
       }
     }
 
-    & span:first-child {}
-
     &:not(:last-child) {
       border-bottom: 2px solid $text-lightest;
     }
@@ -85,5 +83,106 @@
 
   &__link {
     color: $optional;
+  }
+}
+
+.blog {
+
+  &__title {
+    max-width: 800px;
+    margin-bottom: 54px;
+    font-size: 54px;
+    text-transform: uppercase;
+
+    & span {
+      display: inline-block;
+      max-width: 280px;
+      padding-left: 6px;
+      @extend %GolosText-400;
+      font-size: 20px;
+      line-height: 1.2;
+      text-transform: none;
+      color: $optional;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (1fr 1fr 1.2fr);
+    grid-template-areas:
+      "a b c"
+      "d e c"
+      "f g g";
+    gap: 16px;
+    list-style: none;
+    counter-reset: num;
+  }
+
+  &__item {
+    position: relative;
+    max-height: 100%;
+    padding: 20px 20px 20px 70px;
+    @extend %GolosText-500;
+    color: $title;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: counter(num);
+      counter-increment: num;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 36px;
+      height: 36px;
+      background-color: $white;
+      @extend %GolosText-600;
+      border-radius: 50%;
+    }
+
+    &:nth-child(1) {
+      grid-area: a;
+    }
+
+    &:nth-child(2) {
+      grid-area: b;
+    }
+
+    &:nth-child(3) {
+      grid-area: c;
+    }
+
+    &:nth-child(4) {
+      grid-area: d;
+    }
+
+    &:nth-child(5) {
+      grid-area: e;
+    }
+
+    &:nth-child(6) {
+      grid-area: f;
+    }
+
+    &:nth-child(7) {
+      grid-area: g;
+      padding-right: 315px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    content: '';
+    right: -70px;
+    bottom: -7px;
   }
 }
