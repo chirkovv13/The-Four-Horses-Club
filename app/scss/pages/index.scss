@@ -1,6 +1,6 @@
 .info {
   overflow: hidden;
-  padding: 80px 0 103px;
+  padding: 80px 0 100px;
 
   &__top {
     display: flex;
@@ -39,19 +39,19 @@
     position: absolute;
     content: '';
     top: 38px;
-    right: 703px;
+    right: 720px;
   }
 
   &__content {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 687px;
+    max-width: 704px;
     padding-top: 38px;
   }
 
   &__list {
-    padding: 16px 0 33px;
+    padding: 20px 0 33px;
   }
 
   &__item {
@@ -61,7 +61,7 @@
 
     & span {
       display: inline-block;
-      max-width: 381px;
+      max-width: 399px;
       width: 100%;
       padding: 15px;
       @extend %GolosText-600;
@@ -124,7 +124,7 @@
       "a b c"
       "d e c"
       "f g g";
-    gap: 16px;
+    gap: 19px;
     list-style: none;
     counter-reset: num;
   }
@@ -132,7 +132,7 @@
   &__item {
     position: relative;
     max-height: 100%;
-    padding: 20px 20px 20px 70px;
+    padding: 20px 20px 20px 72px;
     @extend %GolosText-500;
     color: $title;
     background-position: center top;
@@ -188,7 +188,100 @@
   &__img {
     position: absolute;
     content: '';
-    right: -70px;
-    bottom: -7px;
+    right: -63px;
+    bottom: -2px;
+  }
+}
+
+.author {
+  padding: 100px 0 100px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-size: 54px;
+    text-transform: uppercase;
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 151px;
+    width: 100%;
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $title;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    & svg {
+      fill: white;
+    }
+  }
+
+  // &__btn-left {}
+
+  // &__btn-right {}
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 17px;
+  }
+
+  &__item {
+    max-width: 394px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 28px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__box {
+    text-align: center;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 6px;
+    @extend %GolosText-600;
+    color: $title;
+    font-size: 24px;
+  }
+
+  &__rank {
+    display: block;
+    margin-bottom: 20px;
+    color: $text-lighten;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 8px 10px;
+    @extend %GolosText-500;
+    font-size: 16px;
+    color: $optional;
+    border: 1px solid $optional;
+    border-radius: 25px;
   }
 }
